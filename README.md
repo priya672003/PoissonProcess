@@ -25,7 +25,40 @@ The Poisson process is one of the most widely-used counting processes. It is usu
 
 # Program :
 
- 
+## DEVELOPED BY : PRIYADARSHINI R
 
-# Results and Output : 
+## REG.NO :  212220230038
+
+```python 3
+
+import numpy as np
+import math
+
+l=3
+t=2
+
+def p(x):
+    return round(math.exp(-l*t)*((l*t)*x)/math.factorial(x),2)
+
+print("probability that exactly 4 customers arrive",p(4))
+
+n=1-(p(0)+p(1)+p(2)+p(3)+p(4))
+print("probability that more than 4 customers arrive",n)
+
+m=p(0)+p(1)+p(2)+p(3)
+print(" rate of 3 per minute during a time interval of 2 min.",m)
+
+
+```
+
+ 
+# Output : 
+
+![image](https://user-images.githubusercontent.com/81132849/175759368-7325f3ac-103e-4082-a403-759328d69f76.png)
+
+
+
+# RESULT : 
+
+The probability of the following are found given that the customers arrive at a bank according to a Poisson process with mean rate of 3 per minute during a time interval of 2 min. (i) exactly 4 customers arrive (ii) more than 4 customers arrive (iii) fewer than 4 customers in 2 minute arrival.
  
